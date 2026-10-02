@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap prose">{{ .Content }}</div>
+<div class="wrap people">
+  {{- $groups := slice (dict "key" "coaches" "title" "Coaches") (dict "key" "volunteers" "title" "Key volunteers") (dict "key" "directors" "title" "Board of directors") }}
+  {{- range $groups }}
+  <section class="roster">
+    <h2>{{ .title }}</h2>
+    <dl>
+      {{- range index hugo.Data.people .key }}
+      <div><dt>{{ .role }}</dt><dd>{{ with .name }}{{ . }}{{ else }}<span class="vacant">Vacant</span>{{ end }}</dd></div>
+      {{- end }}
+    </dl>
+  </section>
+  {{- end }}
+</div>
+{{- with .Params.photographer }}
+<section class="wrap photographer">
+  <h2>{{ .heading }}</h2>
+  <p>{{ .text }}</p>
+  <a href="{{ .link }}" rel="noopener">{{ .linkText }}</a>
+</section>
+{{- end }}
+{{ end }}

@@ -1,0 +1,5 @@
+{{- /* Makes links like /programs/ in page text work even when the site lives in a subfolder. External links open normally. */ -}}
+{{- $u := .Destination -}}
+{{- if and (hasPrefix $u "/") (not (hasPrefix $u "//")) }}{{ $u = relURL (strings.TrimPrefix "/" $u) }}{{ end -}}
+<a href="{{ $u | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if hasPrefix $u "http" }} rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /* */ -}}

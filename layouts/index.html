@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{- $h := .Params.hero }}
+<section class="hero">
+  <div class="hero-photo">{{ partial "img.html" (dict "src" $h.image "alt" $h.imageAlt "eager" true) }}</div>
+  <div class="wrap hero-inner">
+    <h1>{{ $h.heading }}</h1>
+    <p class="hero-text">{{ $h.text }}</p>
+    <div class="hero-actions">
+      {{- if site.Params.registrationOpen }}
+      <a class="btn" href="{{ site.Params.registrationURL }}" rel="noopener">Register for {{ site.Params.season }}</a>
+      {{- end }}
+      <a class="btn btn-ghost" href="{{ "/programs/" | relURL }}">See our programs</a>
+    </div>
+  </div>
+  <svg class="lane lane-hero" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 C 380 70, 880 60, 1440 8" /><path d="M0 78 C 400 78, 900 70, 1440 22" /></svg>
+</section>
+
+<section class="panels" aria-label="Get started">
+  {{- range $i, $p := .Params.panels }}
+  <article class="panel{{ if modBool $i 2 }}{{ else }} panel-flip{{ end }}">
+    <div class="panel-photo">{{ partial "img.html" (dict "src" $p.image "alt" $p.imageAlt "sizes" "(min-width: 900px) 55vw, 100vw") }}</div>
+    <div class="panel-body">
+      <h2>{{ $p.heading }}</h2>
+      <p>{{ $p.text }}</p>
+      <a class="btn" href="{{ $p.link | relURL }}">{{ $p.button }}</a>
+    </div>
+  </article>
+  {{- end }}
+</section>
+
+<section class="home-partners">
+  <div class="wrap">
+    <h2>Thank you to our partners</h2>
+    {{ partial "partner-grid.html" . }}
+  </div>
+</section>
+{{ end }}

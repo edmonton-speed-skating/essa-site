@@ -1,0 +1,12 @@
+<ul class="partner-grid">
+  {{- range hugo.Data.partners }}
+  <li>
+    <a href="{{ .url }}" rel="noopener">
+      {{- with resources.Get (printf "images/partners/%s" .logo) }}{{ with .Resize "300x webp" }}
+      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" loading="lazy">
+      {{- end }}{{ end }}
+      <span>{{ .name }}</span>
+    </a>
+  </li>
+  {{- end }}
+</ul>

@@ -1,0 +1,12 @@
+# Training locations shown on the About page.
+# map: the Google Maps "Embed a map" link for the location.
+
+- name: Clareview Community Recreation Centre
+  track: Short Track
+  map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2367.5087569023804!2d-113.40553218415185!3d53.60222638003344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a03c95cf5ff9a7%3A0x385e42dfc57698d1!2sClareview+Community+Recreation+Centre!5e0!3m2!1sen!2sca!4v1564034797459!5m2!1sen!2sca
+- name: Kinsmen Twin Arenas
+  track: Short Track
+  map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.980586560263!2d-113.5160989841982!3d53.45093328000104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01efb180d768b%3A0x63cd6491dbb20f1d!2sKinsmen+Twin+Arenas!5e0!3m2!1sen!2sca!4v1564034972010!5m2!1sen!2sca
+- name: Victoria Park Oval
+  track: Long Track
+  map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.3435842256613!2d-113.52472518419502!3d53.533779180018655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02224ced50961%3A0x7c9c91c3cedbc500!2sVictoria+Park!5e0!3m2!1sen!2sca!4v1564035125516!5m2!1sen!2sca

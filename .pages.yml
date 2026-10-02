@@ -1,0 +1,116 @@
+# Configuration for Pages CMS (https://pagescms.org), a free editor that lets
+# volunteers update this site through simple forms, without touching code.
+media:
+  - name: photos
+    label: Photos
+    input: assets/images/photos
+    output: photos
+    extensions: [jpg, jpeg, png, webp]
+  - name: partners
+    label: Partner logos
+    input: assets/images/partners
+    output: ""
+    extensions: [jpg, jpeg, png, webp]
+  - name: documents
+    label: Policy PDFs
+    input: static/documents/policies
+    output: ""
+    extensions: [pdf]
+
+content:
+  - name: programs
+    label: Programs
+    type: file
+    path: data/programs.yaml
+    list: true
+    fields:
+      - { name: group, label: "Group number (badge)", type: string }
+      - { name: name, label: "Program name", type: string, required: true }
+      - { name: who, label: "Who it's for", type: text }
+      - { name: details, label: "Details", type: text }
+      - name: sessions
+        label: Training times
+        type: object
+        list: true
+        fields:
+          - { name: track, label: "Track", type: select, options: { values: ["Short Track", "Long Track", "Dryland"] } }
+          - { name: when, label: "Days and times", type: string }
+          - { name: where, label: "Location", type: string }
+      - name: fees
+        label: Program fees
+        type: object
+        list: true
+        fields:
+          - { name: label, label: "Option", type: string }
+          - { name: price, label: "Price", type: string }
+      - name: rental
+        label: Skate rental fees
+        type: object
+        list: true
+        fields:
+          - { name: label, label: "Option", type: string }
+          - { name: price, label: "Price", type: string }
+      - { name: note, label: "Extra note (optional)", type: string }
+
+  - name: people
+    label: People
+    type: file
+    path: data/people.yaml
+    fields:
+      - name: coaches
+        label: Coaches
+        type: object
+        list: true
+        fields:
+          - { name: role, label: Role, type: string }
+          - { name: name, label: "Name (blank = Vacant)", type: string }
+      - name: volunteers
+        label: Key volunteers
+        type: object
+        list: true
+        fields:
+          - { name: role, label: Role, type: string }
+          - { name: name, label: "Name (blank = Vacant)", type: string }
+      - name: directors
+        label: Board of directors
+        type: object
+        list: true
+        fields:
+          - { name: role, label: Role, type: string }
+          - { name: name, label: "Name (blank = Vacant)", type: string }
+
+  - name: policies
+    label: Policies
+    type: file
+    path: data/policies.yaml
+    list: true
+    fields:
+      - { name: section, label: "Section", type: string }
+      - name: policies
+        label: Policies in this section
+        type: object
+        list: true
+        fields:
+          - { name: title, label: "Policy name", type: string }
+          - { name: file, label: "PDF", type: file, options: { media: documents } }
+          - { name: status, label: "Status (e.g. Suspended; leave blank if active)", type: string }
+
+  - name: partners
+    label: Partners and sponsors
+    type: file
+    path: data/partners.yaml
+    list: true
+    fields:
+      - { name: name, label: "Name", type: string }
+      - { name: url, label: "Website", type: string }
+      - { name: logo, label: "Logo (square works best)", type: image, options: { media: partners } }
+
+  - name: locations
+    label: Training locations
+    type: file
+    path: data/locations.yaml
+    list: true
+    fields:
+      - { name: name, label: "Location name", type: string }
+      - { name: track, label: "Track", type: string }
+      - { name: map, label: "Google Maps embed link", type: string }

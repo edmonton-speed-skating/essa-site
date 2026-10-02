@@ -1,0 +1,11 @@
+{{/* Page title band, with an optional photo behind it. */}}
+<div class="page-head{{ with .Params.image }} has-photo{{ end }}">
+  {{- with .Params.image }}
+  <div class="page-head-photo">{{ partial "img.html" (dict "src" . "alt" "" "eager" true) }}</div>
+  {{- end }}
+  <div class="wrap page-head-inner">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.lede }}<p class="lede">{{ . }}</p>{{ end }}
+  </div>
+  <svg class="lane" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 420 40, 900 34, 1440 6" /></svg>
+</div>

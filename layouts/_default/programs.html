@@ -1,0 +1,56 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap programs-intro">
+  <div class="prose">{{ .Content }}</div>
+  {{ partial "register-card.html" . }}
+</div>
+
+<section class="wrap programs" aria-labelledby="options">
+  <h2 id="options">Program options</h2>
+  <nav class="program-index" aria-label="Jump to a program">
+    <ul>
+      {{- range hugo.Data.programs }}
+      <li><a href="#{{ .name | anchorize }}">{{ .name }}</a></li>
+      {{- end }}
+    </ul>
+  </nav>
+
+  {{- range hugo.Data.programs }}
+  <article class="program" id="{{ .name | anchorize }}">
+    <header class="program-head">
+      {{- with .group }}<span class="group-badge" aria-hidden="true">{{ . }}</span>{{ end }}
+      <h3>{{ .name }}</h3>
+    </header>
+    <div class="program-body">
+      <div class="program-who">
+        {{ .who | markdownify }}
+        {{ with .details }}<div class="program-details">{{ . | markdownify }}</div>{{ end }}
+        {{ with .note }}<p class="program-note">{{ . | markdownify }}</p>{{ end }}
+      </div>
+      <div class="program-facts">
+        <table class="schedule">
+          <caption>Training times</caption>
+          <tbody>
+            {{- range .sessions }}
+            <tr><th scope="row">{{ .track }}</th><td>{{ replace .when "; " "<br>" | safeHTML }}<span class="where">{{ .where }}</span></td></tr>
+            {{- end }}
+          </tbody>
+        </table>
+        <div class="fees">
+          <dl>
+            <dt>Program fees</dt>
+            {{- range .fees }}<dd><span>{{ .label }}</span><strong>{{ .price }}</strong></dd>{{ end }}
+          </dl>
+          {{- with .rental }}
+          <dl>
+            <dt>Skate rental</dt>
+            {{- range . }}<dd><span>{{ .label }}</span><strong>{{ .price }}</strong></dd>{{ end }}
+          </dl>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+  </article>
+  {{- end }}
+</section>
+{{ end }}

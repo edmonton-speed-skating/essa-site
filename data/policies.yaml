@@ -1,0 +1,37 @@
+# Policy documents shown on the Policies page.
+# file: PDF name inside static/documents/policies/
+
+- section: Membership
+  policies:
+    - title: Refund and Cost Adjustment Policy
+      file: ESSA_Refund-and-Cost-Adjustment-Policy_04OCT2024.pdf
+    - title: Competition Coaching Policy
+      file: ESSA-Competition-Coaching-Policy.pdf
+    - title: Athlete Progression Policy
+      file: Athlete-Progression-Fee-Policy-approved.pdf
+    - title: Provincial & National Category Upgrade Policy
+      file: Category-Upgrade-Policy.pdf
+    - title: Volunteer Policy
+      file: ESSA_Volunteer-Policy.pdf
+
+- section: Governance
+  policies:
+    - title: Athlete Code of Conduct
+      file: ESSA_Athlete_Code_of_Conduct-2.1-approved-1.pdf
+    - title: Parent/Guardian Code of Conduct
+      file: ESSA_Parent-Guardian_Code_of_Conduct-2.2-approved.pdf
+    - title: Coach Code of Conduct
+      file: ESSA_Coach_Code_of_Conduct-2.3-approved.pdf
+
+- section: Funding
+  policies:
+    - title: Out of Province Funding Policy
+      file: ESSA_Out-of-Province-Funding-Policy-3.1-approved.pdf
+      status: Suspended
+    - title: KidSport Policy
+      file: ESSA_KidSport-Policy-3.2-approved.pdf
+
+- section: Training
+  policies:
+    - title: Outdoor Inclement Weather Training Policy
+      file: Inclement-Weather-Training-Policy.pdf

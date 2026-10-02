@@ -1,0 +1,5 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap prose">{{ .Content }}</div>
+<div class="wrap">{{ partial "partner-grid.html" . }}</div>
+{{ end }}

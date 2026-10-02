@@ -1,0 +1,194 @@
+# Program options shown on the Programs page, in this order.
+# Each program has:
+#   group:    the group label shown in the badge (e.g. "1", "5", "6", or leave blank)
+#   name:     program name
+#   who:      who the program is for (Markdown allowed)
+#   details:  extra details (Markdown allowed)
+#   sessions: list of training times; track is "Short Track" or "Long Track"
+#   fees:     program fees; rental: skate rental fees
+#   note:     anything else (optional)
+
+- group: "1"
+  name: Group 1
+  who: |
+    Returning athletes who have been instructed to register in this program, **or** new athletes 5–8 years of age.
+  details: |
+    Skaters must be able to get up by themselves and propel themselves forward without assistance. The program includes both short track and long track, and the skating location varies by time of year. Athletes train 1–2 times per week.
+
+    Speed skate rentals are not required for Group 1; hockey, figure or other skates can be used.
+  sessions:
+    - track: Short Track
+      when: Tuesday, 5:15–6:00 PM
+      where: Kinsmen Arena
+    - track: Long Track
+      when: Tuesday & Thursday, 6:00–7:00 PM
+      where: Victoria Oval
+  fees:
+    - label: Full season (Oct–Mar)
+      price: $305
+    - label: Half season (Oct–Dec or Jan–Mar)
+      price: $170
+  rental:
+    - label: Full season (Oct–Mar)
+      price: $150 + $100 refundable deposit
+    - label: Half season (Oct–Dec or Jan–Mar)
+      price: $75 + $100 refundable deposit
+
+- group: "2"
+  name: Group 2
+  who: |
+    Returning athletes who have been instructed to register in this program, **or** new athletes aged 7+ with prior skating experience.
+  details: |
+    The program includes both short track and long track, and the skating location varies by time of year. Athletes train 1–2 times per week. Speed skates are required for Group 2.
+  sessions:
+    - track: Short Track
+      when: Tuesday, 6:00–7:15 PM
+      where: Kinsmen Arena
+    - track: Long Track
+      when: Tuesday & Thursday, 6:00–7:00 PM
+      where: Victoria Oval
+  fees:
+    - label: Full season (Oct–Mar)
+      price: $360
+    - label: Half season (Oct–Dec or Jan–Mar)
+      price: $190
+  rental:
+    - label: Full season (Oct–Mar)
+      price: $150 + $100 refundable deposit
+    - label: Half season (Oct–Dec or Jan–Mar)
+      price: $75 + $100 refundable deposit
+
+- group: "3"
+  name: Group 3
+  who: |
+    Returning athletes who have been instructed to register in this program, **or** new athletes aged 8+ with strong skating experience.
+  details: |
+    The program includes both short track and long track, and the skating location varies by time of year. Athletes train 2–3 times per week.
+  sessions:
+    - track: Short Track
+      when: Sunday, 5:30–6:30 PM
+      where: Kinsmen Arena
+    - track: Short Track
+      when: Thursday, 6:00–7:00 PM
+      where: Clareview Arena
+    - track: Long Track
+      when: Tuesday & Thursday, 6:00–7:00 PM
+      where: Victoria Oval
+  fees:
+    - label: Full season (Oct–Mar)
+      price: $550
+  rental:
+    - label: Full season (Oct–Mar)
+      price: $150 + $100 refundable deposit
+
+- group: "4"
+  name: Group 4
+  who: |
+    Returning athletes who have been instructed to register in this program.
+  details: |
+    Athletes train 3–4 times per week.
+  sessions:
+    - track: Short Track
+      when: Sunday, 6:30–7:30 PM
+      where: Kinsmen Arena
+    - track: Short Track
+      when: Tuesday, 8:00–9:00 PM & Wednesday, 6:15–7:30 PM
+      where: Clareview Arena
+    - track: Long Track
+      when: Monday & Wednesday, 6:00–7:00 PM; Tuesday & Thursday, 7:00–8:30 PM
+      where: Victoria Oval
+  fees:
+    - label: Full season (Oct–Mar)
+      price: $935 (2-instalment payment option available)
+  rental:
+    - label: Short track skates, full season
+      price: $150 + $100 refundable deposit
+    - label: Long track skates, full season
+      price: $150 + $100 refundable deposit
+
+- group: "5"
+  name: Group 5
+  who: |
+    Available to athletes by invitation only.
+  details: |
+    Athletes train 4–5 times per week.
+  sessions:
+    - track: Short Track
+      when: Sunday, 6:00–7:30 PM; Tuesday, 9:00–10:15 PM; Wednesday, 6:15–7:30 PM; Thursday, 7:00–8:00 PM
+      where: Clareview Arena
+    - track: Long Track
+      when: Monday & Wednesday, 6:00–7:00 PM; Tuesday & Thursday, 7:00–8:30 PM
+      where: Victoria Oval
+  fees:
+    - label: Full season (Oct–Mar)
+      price: $1,210 (2-instalment payment option available)
+  rental:
+    - label: Short track skates, full season
+      price: $150 + $100 refundable deposit
+    - label: Long track skates, full season
+      price: $150 + $100 refundable deposit
+
+- group: "5"
+  name: Group 5 – Long Track Only
+  who: |
+    Experienced long track athletes.
+  details: |
+    Athletes train 4 times per week during long track season.
+  sessions:
+    - track: Long Track
+      when: Monday & Wednesday, 6:00–7:00 PM; Tuesday & Thursday, 7:00–8:30 PM
+      where: Victoria Oval
+  fees:
+    - label: Half season (Dec–Mar)
+      price: $235
+  rental:
+    - label: Long track skates
+      price: $150 + $100 refundable deposit
+
+- group: "6"
+  name: Adult Long Track – Beginner (coached)
+  who: |
+    New or experienced adults interested in long track speed skating during ESSA's exclusive use time at Victoria Park Oval (Monday through Thursday evenings).
+  details: |
+    Tuesday and Thursday evenings are coached sessions.
+  sessions:
+    - track: Long Track
+      when: Tuesday & Thursday, 8:00–9:00 PM
+      where: Victoria Oval
+  fees:
+    - label: Half season (Dec–Mar)
+      price: $235
+  rental:
+    - label: Long track skates
+      price: $150 + $100 refundable deposit
+
+- group: "6"
+  name: Adult Long Track – Masters (uncoached)
+  who: |
+    New or experienced adults interested in long track speed skating during ESSA's exclusive use time at Victoria Park Oval (Monday through Thursday evenings).
+  details: ""
+  sessions:
+    - track: Long Track
+      when: Monday & Wednesday, 6:00–7:00 PM; Tuesday & Thursday, 8:00–9:00 PM
+      where: Victoria Oval
+  fees:
+    - label: Half season (Dec–Mar)
+      price: $235
+  rental:
+    - label: Long track skates
+      price: $150 + $100 refundable deposit
+
+- group: ""
+  name: Strength and Conditioning
+  who: |
+    Athletes 12–18 years old only (12 as of September 14, 2026).
+  details: |
+    Supplementary strength and conditioning sessions.
+  sessions:
+    - track: Dryland
+      when: Mondays, 8:00–9:00 PM, Sep 14 – Mar 29 (no sessions Oct 12, Dec 21, Dec 28 or Feb 15)
+      where: The Bridge Sports Training (Kinsmen Arena)
+  fees:
+    - label: Full season
+      price: $375
+  rental: []

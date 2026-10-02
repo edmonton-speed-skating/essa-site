@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ "/" | relURL }}" aria-label="{{ site.Title }}, home">
+      {{- with resources.Get "images/essa-logo.jpg" }}{{ with .Resize "240x webp" }}
+      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Edmonton Speed Skating Association logo">
+      {{- end }}{{ end }}
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        {{- $current := . }}
+        {{- range site.Menus.main }}
+        {{- $active := and .Page (eq .Page.RelPermalink $current.RelPermalink) }}
+        <li><a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}{{ if hasPrefix .URL "http" }} rel="noopener"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+      {{- if site.Params.registrationOpen }}
+      <a class="btn btn-small" href="{{ site.Params.registrationURL }}" rel="noopener">Register now</a>
+      {{- end }}
+    </nav>
+  </div>
+</header>

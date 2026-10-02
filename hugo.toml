@@ -1,0 +1,77 @@
+# Site-wide settings for the ESSA website.
+# Most yearly updates happen in the [params] section below and in the data/ folder.
+
+baseURL = "https://edmontonspeedskating.ca/"
+locale = "en-CA"
+title = "Edmonton Speed Skating Association"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  shortName = "ESSA"
+  description = "The Edmonton Speed Skating Association offers short track and long track speed skating for every age and ability in Alberta's capital region."
+
+  # --- Registration (update each season) ---
+  season = "2026–27"
+  registrationOpen = true
+  registrationURL = "https://icereg.ca/#!/events/edmonton-speed-skating-association-20262027"
+
+  # --- Contact ---
+  email = "president@edmontonspeedskating.ca"
+  rentalsEmail = "rentals@edmontonspeedskating.ca"
+  mailingAddress = ["Edmonton Speed Skating Association", "PO Box 1110 Edmonton Main", "Edmonton, AB  T5J 2M1"]
+  facebook = "https://www.facebook.com/EdmontonSpeedSkating/"
+  instagram = "https://www.instagram.com/edmontonspeedskating/"
+  store = "https://essa.printmachine.ca/"
+
+  # --- Mailchimp mailing list (from the club's existing Mailchimp signup form) ---
+  mailchimpAction = "https://edmontonspeedskating.us5.list-manage.com/subscribe/post?u=994a78fac0f8119f490dd215c&id=49151ec796"
+  mailchimpHoneypot = "b_994a78fac0f8119f490dd215c_49151ec796"
+
+  photoCredit = "Photos by Stephen Maunder"
+
+# Top navigation. Change the order with "weight" (lower comes first).
+[menus]
+  [[menus.main]]
+    name = "Programs"
+    pageRef = "/programs"
+    weight = 10
+  [[menus.main]]
+    name = "Registration"
+    pageRef = "/registration"
+    weight = 20
+  [[menus.main]]
+    name = "People"
+    pageRef = "/people"
+    weight = 30
+  [[menus.main]]
+    name = "Policies"
+    pageRef = "/policies"
+    weight = 40
+  [[menus.main]]
+    name = "Partners"
+    pageRef = "/partners"
+    weight = 50
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 60
+  [[menus.main]]
+    name = "Contact"
+    pageRef = "/contact"
+    weight = 70
+  [[menus.main]]
+    name = "Store"
+    url = "https://essa.printmachine.ca/"
+    weight = 80
+
+[markup.goldmark.renderer]
+  # Lets editors paste a little HTML into Markdown when they need it.
+  unsafe = true
+
+[imaging]
+  resampleFilter = "Lanczos"
+  [imaging.webp]
+    quality = 82
+  [imaging.jpeg]
+    quality = 82

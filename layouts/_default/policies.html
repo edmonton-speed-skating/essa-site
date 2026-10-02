@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap policies">
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{- range hugo.Data.policies }}
+  <section class="policy-group">
+    <h2>{{ .section }}</h2>
+    <ul>
+      {{- range .policies }}
+      <li class="{{ with .status }}is-{{ . | lower }}{{ end }}">
+        <a href="{{ printf "documents/policies/%s" .file | relURL }}">{{ .title }}</a>
+        {{- with .status }} <span class="status">{{ . }}</span>{{ end }}
+        <span class="filetype">PDF</span>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+</div>
+{{ end }}

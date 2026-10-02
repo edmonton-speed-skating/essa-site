@@ -1,0 +1,20 @@
+{{/* Mailchimp mailing list form. Posts straight to the club's existing Mailchimp audience. */}}
+{{- $id := .id | default "signup" }}
+<form class="signup" action="{{ site.Params.mailchimpAction }}" method="post" target="_blank" rel="noopener">
+  <p class="signup-heading">Join our mailing list</p>
+  <p class="signup-text">Club news, registration dates and race announcements.</p>
+  <label for="{{ $id }}-email">Email address</label>
+  <input id="{{ $id }}-email" type="email" name="EMAIL" autocomplete="email" required>
+  <div class="signup-names">
+    <div>
+      <label for="{{ $id }}-fname">First name <span class="optional">(optional)</span></label>
+      <input id="{{ $id }}-fname" type="text" name="FNAME" autocomplete="given-name">
+    </div>
+    <div>
+      <label for="{{ $id }}-lname">Last name <span class="optional">(optional)</span></label>
+      <input id="{{ $id }}-lname" type="text" name="LNAME" autocomplete="family-name">
+    </div>
+  </div>
+  <div class="hp" aria-hidden="true"><input type="text" name="{{ site.Params.mailchimpHoneypot }}" tabindex="-1" value=""></div>
+  <button class="btn" type="submit">Subscribe</button>
+</form>

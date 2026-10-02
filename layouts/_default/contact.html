@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap contact">
+  <div class="contact-details">
+    <h2>Email us</h2>
+    <p><a class="contact-email" href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></p>
+    <p>Skate rentals: <a href="mailto:{{ site.Params.rentalsEmail }}">{{ site.Params.rentalsEmail }}</a></p>
+    <h2>Mailing address</h2>
+    <address>{{ range site.Params.mailingAddress }}{{ . }}<br>{{ end }}</address>
+    <h2>Follow us</h2>
+    <p><a href="{{ site.Params.facebook }}" rel="noopener">Facebook</a> and <a href="{{ site.Params.instagram }}" rel="noopener">Instagram</a></p>
+    {{ .Content }}
+  </div>
+  <div class="contact-signup">{{ partial "signup.html" (dict "id" "contact") }}</div>
+</div>
+{{ end }}

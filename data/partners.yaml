@@ -1,0 +1,18 @@
+# Partners and sponsors shown on the Partners page and the home page.
+# logo: file name inside assets/images/partners/
+
+- name: Speed Skating Canada
+  url: https://speedskating.ca/
+  logo: speed-skating-canada.jpg
+- name: Speed Skating Alberta
+  url: https://speedskatingalberta.ca/
+  logo: speed-skating-alberta.jpg
+- name: City of Edmonton
+  url: https://www.edmonton.ca/
+  logo: city-of-edmonton.jpg
+- name: The Bridge – Sports Therapy & Training
+  url: https://www.thebridge.fit/
+  logo: the-bridge.jpg
+- name: Challenger Geomatics
+  url: https://www.challengergeomatics.com/
+  logo: challenger-geomatics.png

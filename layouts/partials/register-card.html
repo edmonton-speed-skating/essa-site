@@ -1,0 +1,11 @@
+<aside class="register-card">
+  {{- if site.Params.registrationOpen }}
+  <p class="register-card-heading">Registration for {{ site.Params.season }} is open</p>
+  <p>All registration happens online through IceReg.</p>
+  <a class="btn" href="{{ site.Params.registrationURL }}" rel="noopener">Register on IceReg</a>
+  {{- else }}
+  <p class="register-card-heading">Registration is closed</p>
+  <p>Join the mailing list to hear when registration for next season opens.</p>
+  {{- end }}
+  <p class="register-card-small">Questions about rentals? <a href="mailto:{{ site.Params.rentalsEmail }}">{{ site.Params.rentalsEmail }}</a></p>
+</aside>

@@ -1,0 +1,9 @@
+{{/* Training locations from data/locations.yaml, with embedded Google Maps. */}}
+<div class="locations">
+  {{- range hugo.Data.locations }}
+  <figure class="location">
+    <iframe src="{{ .map }}" title="Map of {{ .name }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <figcaption><strong>{{ .name }}</strong><span>{{ .track }}</span></figcaption>
+  </figure>
+  {{- end }}
+</div>

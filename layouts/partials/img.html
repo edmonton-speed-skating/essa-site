@@ -1,0 +1,13 @@
+{{/* Responsive image from assets/images. Usage: partial "img.html" (dict "src" "photos/x.jpg" "alt" "..." "sizes" "100vw" "class" "" "eager" false) */}}
+{{- with resources.Get (printf "images/%s" .src) }}
+  {{- $w := slice 480 800 1200 1800 }}
+  {{- $set := slice }}
+  {{- $orig := . }}
+  {{- range $w }}{{ if le . $orig.Width }}{{ $r := $orig.Resize (printf "%dx webp" .) }}{{ $set = $set | append (printf "%s %dw" $r.RelPermalink .) }}{{ end }}{{ end }}
+  {{- $fallback := .Resize "1200x webp" }}
+  <img src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $set ", " }}" sizes="{{ $.sizes | default "100vw" }}"
+       width="{{ $fallback.Width }}" height="{{ $fallback.Height }}" alt="{{ $.alt }}"
+       {{ with $.class }}class="{{ . }}"{{ end }} {{ if not $.eager }}loading="lazy"{{ end }} decoding="async">
+{{- else }}
+  {{- warnf "Image not found: assets/images/%s" .src }}
+{{- end }}

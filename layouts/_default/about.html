@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap about">
+  <nav class="about-index" aria-label="On this page">
+    <ul>
+      <li><a href="#essa">Who we are</a></li>
+      <li><a href="#why">Why speed skating?</a></li>
+      <li><a href="#locations">Where we train</a></li>
+      <li><a href="#history">Our history</a></li>
+    </ul>
+  </nav>
+  <div class="prose">{{ .Content }}</div>
+</div>
+{{ end }}
