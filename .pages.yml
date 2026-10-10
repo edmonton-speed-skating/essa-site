@@ -33,6 +33,35 @@ content:
           - { name: text, label: "Text", type: string }
           - { name: image, label: "Image", type: image }
           - { name: imageAlt, label: "Image Alt Text", type: string }
+      - name: panels
+        label: Panels
+        type: object
+        list: true
+        fields:
+          - name: heading
+            label: Heading
+            type: object
+            fields:
+            - { name: text, label: "Text", type: rich-text }
+            - { name: button, label: "Button", type: string }
+            - { name: image, label: "Image", type: image }
+            - { name: imageAlt, label: "Image Alt Text", type: string }
+          - name: heading
+            label: Heading
+            type: object
+            fields:
+            - { name: text, label: "Text", type: rich-text }
+            - { name: button, label: "Button", type: string }
+            - { name: image, label: "Image", type: image }
+            - { name: imageAlt, label: "Image Alt Text", type: string }
+          - name: heading
+            label: Heading
+            type: object
+            fields:
+            - { name: text, label: "Text", type: rich-text }
+            - { name: button, label: "Button", type: string }
+            - { name: image, label: "Image", type: image }
+            - { name: imageAlt, label: "Image Alt Text", type: string }        
 
   - name: programs
     label: Programs
