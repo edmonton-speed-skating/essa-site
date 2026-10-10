@@ -22,6 +22,8 @@ content:
     label: Index
     type: file
     path: content/_index.md
+    fields:
+      - { name: title, label: "Title", type: string}
 
   - name: programs
     label: Programs
