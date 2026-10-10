@@ -18,8 +18,8 @@ media:
     extensions: [pdf]
 
 content:
-  - name: programs
-    label: Programs
+  - name: index
+    label: Index
     type: file
     path: content/_index.md
 
