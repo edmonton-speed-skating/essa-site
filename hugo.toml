@@ -1,7 +1,6 @@
 # Site-wide settings for the ESSA website.
 # Most yearly updates happen in the [params] section below and in the data/ folder.
 
-relURL = "essa-site"
 baseURL = "https://edmontonspeedskating.ca/"
 locale = "en-CA"
 title = "Edmonton Speed Skating Association"
