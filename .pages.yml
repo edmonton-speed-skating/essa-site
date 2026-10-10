@@ -34,7 +34,7 @@ content:
           - { name: image, label: "Image", type: image }
           - { name: imageAlt, label: "Image Alt Text", type: string }
       - name: panels
-        label: Panels
+        label: Feature Panels
         type: object
         list: true
         fields:
