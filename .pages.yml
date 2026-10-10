@@ -36,31 +36,14 @@ content:
       - name: panels
         label: Feature Panels
         type: object
+        list: { min: 3, max: 3, collapsible: false }
         fields:
-          - name: heading
-            label: Panel 1
-            type: object
-            fields:
-            - { name: text, label: "Text", type: rich-text }
-            - { name: button, label: "Button", type: string }
-            - { name: image, label: "Image", type: image }
-            - { name: imageAlt, label: "Image Alt Text", type: string }
-          - name: heading
-            label: Panel 2
-            type: object
-            fields:
-            - { name: text, label: "Text", type: rich-text }
-            - { name: button, label: "Button", type: string }
-            - { name: image, label: "Image", type: image }
-            - { name: imageAlt, label: "Image Alt Text", type: string }
-          - name: heading
-            label: Panel 3
-            type: object
-            fields:
-            - { name: text, label: "Text", type: rich-text }
-            - { name: button, label: "Button", type: string }
-            - { name: image, label: "Image", type: image }
-            - { name: imageAlt, label: "Image Alt Text", type: string }        
+          - { name: heading, label: "Heading", type: string }
+          - { name: text, label: "Text", type: text }
+          - { name: button, label: "Button label", type: string }
+          - { name: link, label: "Button link", type: string }
+          - { name: image, label: "Image", type: image }
+          - { name: imageAlt, label: "Image Alt Text", type: string }    
 
   - name: programs
     label: Programs
