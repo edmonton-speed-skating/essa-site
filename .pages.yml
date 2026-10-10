@@ -37,29 +37,26 @@ content:
         label: Feature Panels
         type: object
         fields:
-          - name: panel1
+          - name: heading
             label: Panel 1
             type: object
             fields:
-            - { name: heading, label: "Text", type: string }
             - { name: text, label: "Text", type: rich-text }
             - { name: button, label: "Button", type: string }
             - { name: image, label: "Image", type: image }
             - { name: imageAlt, label: "Image Alt Text", type: string }
-          - name: panel2
+          - name: heading
             label: Panel 2
             type: object
             fields:
-            - { name: heading, label: "Text", type: string }
             - { name: text, label: "Text", type: rich-text }
             - { name: button, label: "Button", type: string }
             - { name: image, label: "Image", type: image }
             - { name: imageAlt, label: "Image Alt Text", type: string }
-          - name: panel3
+          - name: heading
             label: Panel 3
             type: object
             fields:
-            - { name: heading, label: "Text", type: string }
             - { name: text, label: "Text", type: rich-text }
             - { name: button, label: "Button", type: string }
             - { name: image, label: "Image", type: image }
