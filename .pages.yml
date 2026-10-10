@@ -13,7 +13,7 @@ media:
     extensions: [jpg, jpeg, png, webp]
   - name: documents
     label: Policy PDFs
-    input: static/documents/policies
+    input: static/documents\/policies
     output: ""
     extensions: [pdf]
 
