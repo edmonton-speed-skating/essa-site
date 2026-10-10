@@ -23,7 +23,16 @@ content:
     type: file
     path: content/_index.md
     fields:
-      - { name: title, label: "Title", type: string}
+      - { name: title, label: "Title", type: string }
+      - { name: description, label: "Description", type: rich-text }
+      - name: hero
+        label: Hero section
+        type: object
+        fields:
+          - { name: heading, label: "Heading", type: string }
+          - { name: text, label: "Text", type: string }
+          - { name: image, label: "Image", type: image }
+          - { name: imageAlt, label: "Image Alt Text", type: string }
 
   - name: programs
     label: Programs
