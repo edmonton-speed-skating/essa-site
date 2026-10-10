@@ -21,6 +21,11 @@ content:
   - name: programs
     label: Programs
     type: file
+    path: content/_index.md
+
+  - name: programs
+    label: Programs
+    type: file
     path: data/programs.yaml
     list: true
     fields:
