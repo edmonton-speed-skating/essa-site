@@ -36,7 +36,6 @@ content:
       - name: panels
         label: Feature Panels
         type: object
-        list: true
         fields:
           - name: panel1
             label: Panel 1
