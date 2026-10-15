@@ -27,7 +27,6 @@ coaches:
     name: Danielle Wotherspoon-Gregg
   - role: Coach
     name: Keri Morrison
-  - role: Website Coordinator
 volunteers:
   - role: Registrar
     name: Vanessa Zhang
@@ -47,6 +46,7 @@ volunteers:
   - role: Skate Rentals
     name: Cheryl Pardy
   - role: Fundraising
+  - role: Website
 directors:
   - role: President
     name: Jayson Merryfield
