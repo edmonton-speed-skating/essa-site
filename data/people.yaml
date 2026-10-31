@@ -1,12 +1,9 @@
-# People listed on the People page. Leave a name blank to show "Vacant".
-
 coaches:
   - role: Group 1 Lead
     name: Jessica Levins
   - role: Group 2 Lead
     name: Anna Goplen
   - role: Groups 3 & 4 Lead
-    name: Erin Padbury
   - role: Group 5 Lead
     name: Jake McKenzie
   - role: Coach
@@ -29,39 +26,31 @@ coaches:
     name: Danielle Wotherspoon-Gregg
   - role: Coach
     name: Keri Morrison
-
 volunteers:
   - role: Registrar
-    name: ""
+    name: Vanessa Zhang
   - role: Competitions
     name: Jayson Merryfield
   - role: Programming
     name: Brittany Forsyth
-  - role: Coaching Coordinator
-    name: Brittany Forsyth
   - role: Volunteer Coordinator
-    name: ""
+    name: Roddi Potter
   - role: Skater Development
     name: Kenton Puttick
   - role: Officials
-    name: Thersa Piorkowski
   - role: Marketing & Communication
-    name: Krystal Gaudet
   - role: Facilities
     name: Jules Chabot
   - role: Skate Rentals
     name: Cheryl Pardy
   - role: Fundraising
-    name: ""
-
+  - role: Website
 directors:
   - role: President
-    name: Greg Piorkowski
-  - role: Vice President
     name: Jayson Merryfield
-  - role: Treasurer
-    name: Craig Pueschel
-  - role: Director
+  - role: Vice President
     name: Cheryl Pardy
-  - role: Director
-    name: Brittany Forsyth
+  - role: Treasurer
+    name: Jay Varghese
+  - role: Secretary
+    name: Jennifer Tejada

@@ -13,11 +13,38 @@ media:
     extensions: [jpg, jpeg, png, webp]
   - name: documents
     label: Policy PDFs
-    input: static/documents/policies
+    input: static/documents\/policies
     output: ""
     extensions: [pdf]
 
 content:
+  - name: index
+    label: Index
+    type: file
+    path: content/_index.md
+    fields:
+      - { name: title, label: "Title", type: string }
+      - { name: description, label: "Description", type: rich-text }
+      - name: hero
+        label: Hero section
+        type: object
+        fields:
+          - { name: heading, label: "Heading", type: string }
+          - { name: text, label: "Text", type: string }
+          - { name: image, label: "Image", type: image }
+          - { name: imageAlt, label: "Image Alt Text", type: string }
+      - name: panels
+        label: Feature Panels
+        type: object
+        list: { min: 3, max: 3, collapsible: false }
+        fields:
+          - { name: heading, label: "Heading", type: string }
+          - { name: text, label: "Text", type: text }
+          - { name: button, label: "Button label", type: string }
+          - { name: link, label: "Button link", type: string }
+          - { name: image, label: "Image", type: image }
+          - { name: imageAlt, label: "Image Alt Text", type: string }    
+
   - name: programs
     label: Programs
     type: file
