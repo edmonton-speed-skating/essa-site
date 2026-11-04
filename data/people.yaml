@@ -3,48 +3,51 @@ coaches:
     name: Jessica Levins
   - role: Group 2 Lead
     name: Anna Goplen
-  - role: Groups 3 & 4 Lead
+  - role: Groups 3 
+    name: Preisha Nand
+  - role: Group 4 Lead
+    name: Jake McKenzie
   - role: Group 5 Lead
     name: Jake McKenzie
-  - role: Coach
-    name: Kathy Gregg
-  - role: Coach
-    name: Blaine Hill
-  - role: Coach
-    name: Cameron Kosh
-  - role: Coach
-    name: Sophie McFarlane
-  - role: Coach
-    name: Finn Merryfield
-  - role: Coach
-    name: Sarah O'Neill
-  - role: Coach
-    name: Kenton Puttick
-  - role: Coach
-    name: Stefan Waples
-  - role: Coach
-    name: Danielle Wotherspoon-Gregg
-  - role: Coach
-    name: Keri Morrison
-volunteers:
-  - role: Registrar
-    name: Vanessa Zhang
-  - role: Competitions
-    name: Jayson Merryfield
-  - role: Programming
-    name: Brittany Forsyth
-  - role: Volunteer Coordinator
-    name: Roddi Potter
-  - role: Skater Development
-    name: Kenton Puttick
-  - role: Officials
-  - role: Marketing & Communication
-  - role: Facilities
-    name: Jules Chabot
-  - role: Skate Rentals
-    name: Cheryl Pardy
-  - role: Fundraising
-  - role: Website
+  # - role: Coach
+  #   name: Kathy Gregg
+  # - role: Coach
+  #   name: Blaine Hill
+  # - role: Coach
+  #   name: Cameron Kosh
+  # - role: Coach
+  #   name: Finn Merryfield
+  # - role: Coach
+  #   name: Sarah O'Neill
+  # - role: Coach
+  #   name: Kenton Puttick
+  # - role: Coach
+  #   name: Stefan Waples
+  # - role: Coach
+  #   name: Danielle Wotherspoon-Gregg
+  # - role: Coach
+  #   name: Keri Morrison
+# volunteers:
+#   - role: Registrar
+#     name: Vanessa Zhang
+#   - role: Competitions
+#     name: Jayson Merryfield
+#   - role: Programming
+#     name: Brittany Forsyth
+#   - role: Volunteer Coordinator
+#     name: Roddi Potter
+#   - role: Skater Development
+#     name: Kenton Puttick
+#   - role: Officials
+#   - role: Marketing & Communication
+#     name: Lara Shelrud
+#   - role: Facilities
+#     name: Glenn Williams
+#   - role: Skate Rentals
+#     name: Cheryl Pardy
+#   - role: Fundraising
+#   - role: Website
+#     name: Roddi Potter
 directors:
   - role: President
     name: Jayson Merryfield
@@ -54,3 +57,5 @@ directors:
     name: Jay Varghese
   - role: Secretary
     name: Jennifer Tejada
+  - role: Programming
+    name: Brittany Forsyth
